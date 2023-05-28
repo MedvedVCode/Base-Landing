@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* ------Header------ */
+.header {
+  background-color: #222;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 75px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 41px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 33px;
+  margin-right: 10px;
+}
+
+/* --------Poster-------- */
+.poster {
+  background-color: #F1E4E6;
+}
+
+.poster__wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 244px;
+}
+
+.poster__logo {
+  padding-top: 290px;
+  display: grid;
+  grid-template-columns: 12px 377px;
+  gap: 16px;
+}
+
+.poster__rectangle {
+  background-color: #F16D7F;
+}
+
+.poster__text {
+  max-height: 93px;
+}
+
+.poster__text-title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.poster__text-less-font {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.poster__text-color {
+  color: #F16D7F;
+}
+
+/* --------Offer-------- */
+.offer {
+  padding-top: 65px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.offer__item {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.offer__item--all-row{
+  grid-column: span 3;
+}
+
+.offer__item-desc {
+  position: absolute;
+  top: 105px;
+  left: 33%;
+}
+
+.offer__desc-upper {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.offer__desc-down {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #F16D7F;
+}
+
+.offer__accesorises{
+  position: relative;
+  margin-bottom: 66px;
+}
+
+.offer__accesorises-desc{
+  position: absolute;
+  top: 65px;
+  left: 43%;
+}
