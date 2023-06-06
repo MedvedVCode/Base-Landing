@@ -67,6 +67,27 @@ button {
   margin-right: 10px;
 }
 
+.header__link {
+  position: relative;
+}
+
+.header__link--product-count::after {
+  content: '5';
+  height: 19px;
+  width: 19px;
+  background-color: #F16D7F;
+  border-radius: 50%;
+  position: absolute;
+  left: 24px;
+  top: -8px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
 /* --------Poster-------- */
 .poster {
   background-color: #F1E4E6;
@@ -88,7 +109,6 @@ button {
   margin-left: auto;
   margin-right: 100px;
   position: relative;
-
 }
 
 .poster__text-title {
@@ -222,6 +242,12 @@ button {
   height: auto;
 }
 
+.products__card-image:hover::before{
+  background: rgba(58, 56, 56, 0.86);
+  height: 100px;
+  width: 100px;
+}
+
 .products__card-title {
   margin-left: 16px;
   font-weight: 400;
@@ -259,7 +285,74 @@ button {
   cursor: pointer;
 }
 
-.products__browse:hover{
+.products__browse:hover {
   background-color: #F26376;
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+    outline: 1px solid tomato;
+  }
+
+  .header-wrapper {
+    /* padding: 0 32px; */
+  }
+
+  .header-left{
+    margin-left: 32px;
+  }
+  .header-right {
+    gap: 25px;
+    margin-right: 42px;
+  }
+
+  .header__link--product-count {
+    margin-left: 17px;
+  }
+
+  .poster__wrapper{
+    height: 368px;
+    background-position-x: 106px;
+    padding-top: 138px;
+  }
+
+  .poster__text {
+    max-height: 92px;
+    max-width: 283px;
+    margin-right: 32px;
+  }
+
+  .poster__text-title{
+    font-style: 44px;
+    line-height: 53px;
+  }
+
+  .poster__text-less-font{
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .poster__text-color{
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .offer {
+    grid-template-columns: repeat(3, minmax(100px, 232px));
+    grid-template-rows: minmax(100px, 167px) minmax(100px, 116px);
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .products__title{
+    margin-top: 109px;
+  }
+  .products__cards {
+    margin-top: 72px;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(100px, 360px));
+    justify-content: center;
+  }
 }
