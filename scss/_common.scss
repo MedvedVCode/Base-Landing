@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  @include textSize(14px, 17px);
+  color: #5d5d5d;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+figure,
+blockquote {
+  margin: 0;
+  font: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button,
+input {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}

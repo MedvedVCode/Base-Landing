@@ -1,0 +1,122 @@
+.subscribe {
+  background-image: url("../img/subscribe_bgi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(244, 244, 244, 0.7);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.subscribe-wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 448px;
+}
+
+.subscribe-info {
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  color: #222224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subcribe-info__avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  outline: 1px solid white;
+  overflow: hidden;
+}
+
+.subcribe-info__avatar img {
+  object-position: -24px -10px;
+}
+
+.subscribe-info__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.subscribe-info__text span {
+  font-style: italic;
+}
+
+.subscribe-info__text::before,
+.subscribe-info__text::after {
+  content: "“";
+}
+
+.subcsribe-form {
+  text-align: center;
+  max-width: 557px;
+  width: 100%;
+}
+
+.subcribe-form__title,
+.sibscribe-form__desc {
+  line-height: 167.2%;
+  color: #222224;
+  text-transform: uppercase;
+}
+
+.subcribe-form__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.subscribe-form__desc {
+  margin-top: -3px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.subscribe-form__area {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form__area-input {
+  display: block;
+  max-width: 256px;
+  width: 100%;
+  line-height: 49px;
+  border-radius: 25px 0 0 25px;
+  background-color: #e1e1e1;
+  padding-left: 22px;
+  padding-right: 64px;
+  font-size: 14px;
+  color: #222224;
+  opacity: 0.67;
+  box-sizing: border-box;
+}
+
+.subscribe-form__area-btn {
+  display: block;
+  line-height: 49px;
+  max-width: 100px;
+  width: 100%;
+  border-radius: 0 25px 25px 0;
+  background-color: #e05c6e;
+  font-size: 14px;
+  color: white;
+}
+
+.subscribe-form__area-btn:hover {
+  background-color: #fff;
+  color: #f16d7f;
+}
+
+.subscribe-form__area-btn:active {
+  background-color: #e05c6e;
+  color: white;
+}

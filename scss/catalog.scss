@@ -1,0 +1,55 @@
+@import "vars-mixins";
+
+@import 'common';
+@import 'header';
+@import 'breadcrumb';
+@import 'products';
+@import 'subscribe';
+@import 'footer';
+
+
+// --------FEATURES--------
+.feature {
+  background-color: #222224;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.feature-wrp {
+  min-height: 341px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.feature-item {
+  min-height: 134px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-icon {
+  fill: #f16d7f;
+}
+
+.feature-text {
+  color: #fbfbfb;
+}
+
+.feature-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.feature-desc {
+  text-align: center;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+}
