@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Landing & Seo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-wrapper container">
+      <div class="header-left">
+        <a href="#" class="header__logo">
+          <img src="img/header/logo.png" alt="Logo icon" height="39" />
+        </a>
+        <form action="#" class="header__search">
+          <input type="search" id="search" class="header__search-input" />
+          <label for="search">
+            <svg class="header__link-icon" width="27" height="28" viewBox="0 0 27 28"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.0589 17.6249C20.6705 15.8648 21.6275 13.6038 21.769 11.2215C21.9106 8.8392 21.2281 6.48075 19.8362 4.5422C18.4443 2.60365 16.4278 1.20306 14.1252 0.575643C11.8227 -0.0517774 9.37437 0.132183 7.19143 1.09663C5.0085 2.06108 3.22389 3.74727 2.1373 5.87205C1.05071 7.99682 0.728322 10.4308 1.22426 12.7652C1.72021 15.0996 3.00428 17.1922 4.86085 18.6917C6.71741 20.1912 9.0334 21.0063 11.4199 20.9999C13.6723 21.003 15.8638 20.269 17.6599 18.9099L25.4079 26.7169C25.4934 26.806 25.5958 26.8771 25.7091 26.926C25.8225 26.975 25.9444 27.0008 26.0679 27.0019C26.1916 27.0023 26.314 26.9772 26.4276 26.9282C26.5411 26.8792 26.6434 26.8072 26.7279 26.7169C26.9018 26.536 26.999 26.2949 26.999 26.0439C26.999 25.793 26.9018 25.5518 26.7279 25.3709L19.0589 17.6249ZM2.88589 10.4999C2.89873 8.81465 3.41021 7.17089 4.35586 5.77587C5.30151 4.38086 6.63899 3.29703 8.1997 2.66102C9.76042 2.02501 11.4745 1.86529 13.1258 2.202C14.7772 2.53871 16.2919 3.35678 17.479 4.55307C18.6661 5.74935 19.4725 7.27031 19.7965 8.92421C20.1204 10.5781 19.9475 12.2909 19.2995 13.8467C18.6515 15.4024 17.5574 16.7315 16.1551 17.6664C14.7529 18.6013 13.1052 19.1001 11.4199 19.0999C9.14843 19.0891 6.97409 18.1774 5.3741 16.5651C3.77412 14.9527 2.87924 12.7714 2.88589 10.4999Z" />
+            </svg>
+          </label>
+        </form>
+      </div>
+      <div class="header-right">
+        <nav class="header__menu">
+          <label for="switch" class="header__menu-btn">
+            <span></span>
+          </label>
+          <input type="checkbox" class="header__menu-switch" id="switch" />
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <span class="menu-list__title">menu</span>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__item-head">man</a>
+              <ul>
+                <li class="menu-list__subitem">
+                  <a href="#">accessories</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">bags</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">denim</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">t-Shirts</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__item-head">woman</a>
+              <ul>
+                <li class="menu-list__subitem">
+                  <a href="#">accessories</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">jackets & Coats</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">polos</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">t-Shirts</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">shirts</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__item-head">kids</a>
+              <ul>
+                <li class="menu-list__subitem">
+                  <a href="#">accessories</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">jackets & Coats</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">polos</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">t-Shirts</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">shirts</a>
+                </li>
+                <li class="menu-list__subitem">
+                  <a href="#">bags</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__account">
+          <svg class="header__link-icon" width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.5 19.937C19 19.937 22.656 15.464 22.656 9.968C22.656 4.472 19 0 14.5 0C13.3631 0.0217413 12.2463 0.303398 11.2351 0.823397C10.2239 1.34339 9.34507 2.08794 8.66602 3C7.12663 4.99573 6.30819 7.45381 6.34399 9.974C6.34399 15.465 10 19.937 14.5 19.937ZM14.5 1.813C18 1.813 20.844 5.472 20.844 9.969C20.844 14.466 17.998 18.125 14.5 18.125C11.002 18.125 8.15603 14.465 8.15503 9.969C8.15403 5.473 11 1.813 14.5 1.813ZM20.844 18.125C20.6036 18.125 20.373 18.2205 20.203 18.3905C20.033 18.5605 19.9375 18.7911 19.9375 19.0315C19.9375 19.2719 20.033 19.5025 20.203 19.6725C20.373 19.8425 20.6036 19.938 20.844 19.938C22.526 19.9399 24.1386 20.6088 25.3279 21.7982C26.5172 22.9875 27.1861 24.6 27.188 26.282C27.1875 26.5221 27.0918 26.7523 26.922 26.9221C26.7522 27.0918 26.5221 27.1875 26.282 27.188H2.71997C2.47985 27.1875 2.24975 27.0918 2.07996 26.9221C1.91016 26.7523 1.81449 26.5221 1.81396 26.282C1.81608 24.6001 2.48517 22.9877 3.67444 21.7985C4.86371 20.6092 6.47608 19.9401 8.15796 19.938C8.39825 19.938 8.62868 19.8425 8.79858 19.6726C8.96849 19.5027 9.06396 19.2723 9.06396 19.032C9.06396 18.7917 8.96849 18.5613 8.79858 18.3914C8.62868 18.2215 8.39825 18.126 8.15796 18.126C5.99541 18.1279 3.92201 18.9875 2.39258 20.5164C0.863144 22.0453 0.00264777 24.1185 0 26.281C0.000794067 27.0019 0.287502 27.693 0.797241 28.2027C1.30698 28.7125 1.99811 28.9992 2.71899 29H26.282C27.0027 28.9989 27.6936 28.7121 28.2031 28.2024C28.7126 27.6927 28.9992 27.0017 29 26.281C28.9974 24.1187 28.1372 22.0457 26.6083 20.5168C25.0793 18.9878 23.0063 18.1276 20.844 18.125Z" />
+          </svg>
+        </a>
+        <a href="#" class="header__basket">
+          <svg class="header__link-icon" width="32" height="29" viewBox="0 0 32 29" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26.1998 29C25.5521 28.9738 24.9404 28.6948 24.4961 28.2227C24.0518 27.7506 23.8103 27.1232 23.8234 26.475C23.8365 25.8269 24.1032 25.2097 24.5662 24.7559C25.0292 24.3022 25.6516 24.048 26.2999 24.048C26.9482 24.048 27.5706 24.3022 28.0336 24.7559C28.4966 25.2097 28.7633 25.8269 28.7764 26.475C28.7895 27.1232 28.5479 27.7506 28.1036 28.2227C27.6593 28.6948 27.0477 28.9738 26.3999 29H26.1998ZM6.75183 26.32C6.75183 25.79 6.90901 25.2718 7.20349 24.8311C7.49797 24.3904 7.91654 24.0469 8.40625 23.844C8.89596 23.6412 9.43484 23.5881 9.95471 23.6915C10.4746 23.7949 10.9521 24.0502 11.3269 24.425C11.7017 24.7998 11.957 25.2773 12.0604 25.7972C12.1638 26.317 12.1107 26.8559 11.9078 27.3456C11.705 27.8353 11.3615 28.2539 10.9208 28.5483C10.4801 28.8428 9.96194 29 9.43188 29C9.07977 29.0003 8.73102 28.9311 8.40564 28.7966C8.08026 28.662 7.7846 28.4646 7.53552 28.2158C7.28645 27.9669 7.08891 27.6713 6.9541 27.3461C6.81929 27.0208 6.74988 26.6721 6.74988 26.32H6.75183ZM10.5519 20.686C10.2924 20.6868 10.0398 20.6024 9.83301 20.4457C9.62617 20.2891 9.47648 20.0689 9.40686 19.819L4.57385 2.36401H1.18091C0.867422 2.36401 0.566761 2.23947 0.345093 2.01781C0.123425 1.79614 -0.00109863 1.49549 -0.00109863 1.18201C-0.00109863 0.868519 0.123425 0.567873 0.345093 0.346205C0.566761 0.124537 0.867422 5.81268e-06 1.18091 5.81268e-06H5.46191C5.7214 -0.00080736 5.97394 0.0837201 6.18066 0.240568C6.38739 0.397416 6.53674 0.617884 6.60583 0.868006L11.4388 18.323H24.6168L28.9999 8.27501H14.3999C14.2417 8.27961 14.0843 8.25242 13.9368 8.19507C13.7893 8.13771 13.6548 8.05134 13.5413 7.94108C13.4277 7.83082 13.3375 7.69891 13.2759 7.55315C13.2143 7.40739 13.1825 7.25075 13.1825 7.0925C13.1825 6.93426 13.2143 6.77762 13.2759 6.63186C13.3375 6.4861 13.4277 6.35419 13.5413 6.24393C13.6548 6.13367 13.7893 6.0473 13.9368 5.98994C14.0843 5.93259 14.2417 5.90541 14.3999 5.91001H30.8129C31.0086 5.90996 31.2011 5.95866 31.3733 6.05172C31.5454 6.14478 31.6917 6.27926 31.7988 6.44301C31.9067 6.60729 31.9723 6.79569 31.9897 6.99145C32.0072 7.18721 31.976 7.38424 31.8989 7.565L26.4939 19.977C26.4015 20.1876 26.2499 20.3668 26.0574 20.4927C25.8649 20.6186 25.6399 20.6858 25.4099 20.686H10.5519Z" />
+          </svg>
+          <span class="header__busket-number">5</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Breadcrumb -->
+  <section class="breadcrumb">
+    <div class="breadcrumb-wrp">
+      <div class="container">
+        <div class="breadcrumb-text">
+          <h2 class="breadcrumb-text__title">shopping cart</h2>
+          <a href="#" class="breadcrumb-text__link">home
+          </a>
+          <a href="#" class="breadcrumb-text__link">men
+          </a>
+          <a href="#" class="breadcrumb-text__link">new arrivals</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cart -->
+  <section class="cart">
+    <div class="cart-wrp container">
+      <article class="card">
+        <a href="#" class="card-link">
+          <img src="img/hat_boy.png" alt="Boy in hat photo" class="card-img" height="306" />
+        </a>
+        <div class="card-text">
+          <h2 class="card-title">MANGO PEOPLE T-SHIRT</h2>
+          <p class="card-price">
+            Price:
+            <span class="card-price-value">$300</span>
+          </p>
+          <p class="card-color">Color:
+            <span class="card-color-value">red</span>
+          </p>
+          <p class="card-size">Size:
+            <span class="card-size-value">xl</span>
+          </p>
+          <label class="card-quantity">
+            Quantity:
+            <input type="text" class="card-quantity-value" value="2" />
+          </label>
+          <img class="card-cross-img" src="img/cross.svg" alt="Cross on close photo" height="18" />
+        </div>
+      </article>
+      <article class="card">
+        <a href="#" class="card-link">
+          <img src="img/black_boy.png" alt="Boy in hat photo" class="card-img" height="306" />
+        </a>
+        <div class="card-text">
+          <h2 class="card-title">MANGO PEOPLE T-SHIRT</h2>
+          <p class="card-price">
+            Price:
+            <span class="card-price-value">$300</span>
+          </p>
+          <p class="card-color">Color:
+            <span class="card-color-value">red</span>
+          </p>
+          <p class="card-size">Size:
+            <span class="card-size-value">xl</span>
+          </p>
+          <label class="card-quantity">
+            Quantity:
+            <input type="text" class="card-quantity-value" value="2" />
+          </label>
+          <img class="card-cross-img" src="img/cross.svg" alt="Cross on close photo" height="18" />
+        </div>
+      </article>
+      <form action="#" class="address">
+        <h3 class="address-title">
+          shipping address
+        </h3>
+        <input type="text" class="address-city" placeholder="Bangladesh">
+        <input type="text" class="address-state" placeholder="State">
+        <input type="text" class="address-zip" placeholder="Postcode / Zip">
+        <button class="address-quote">get a quote</button>
+      </form>
+      <div class="checkout">
+        <p class="checkout-subtotal">sub total <span>$900</span>
+        </p>
+        <p class="checkout-grandtotal">grand total <span>$900</span>
+        </p>
+        <div class="checkout-btn-wrp">
+          <button class="checkout-btn">proceed to checkout</button>
+        </div>
+      </div>
+      <form action="#" class="card-manage">
+        <button class="card-manage__clear">clear shopping cart</button>
+        <button class="card-manage__continue">continue shopping</button>
+      </form>
+    </div>
+  </section>
+  <!-- Subscribe -->
+  <section class="subscribe">
+    <div class="container">
+      <div class="subscribe-wrp">
+        <figure class="subscribe-info">
+          <div class="subcribe-info__avatar">
+            <img src="img/subscribe_girl.png" alt="Avatar photo" />
+          </div>
+          <blockquote>
+            <p class="subscribe-info__text">
+              Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+              <span>a pulvinar purus condimentum</span>
+            </p>
+          </blockquote>
+        </figure>
+        <div class="subcsribe-form">
+          <h2 class="subcribe-form__title">subscribe</h2>
+          <p class="subscribe-form__desc">
+            for our newletter and promotion
+          </p>
+          <form action="#" class="subscribe-form__area">
+            <input type="email" placeholder="Enter Your Email" class="subscribe-form__area-input" required />
+            <button class="subscribe-form__area-btn" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-wrp">
+      <p class="copyright-txt">&#169; 2022 Brand All Rights Reserved.</p>
+      <ul class="social-links">
+        <li>
+          <a href="#" class="social-links__item">
+            <svg class="social-links__item-icon" width="13" height="16" viewBox="0 0 13 16"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37187 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35313 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-links__item">
+            <svg class="social-links__item-icon" width="17" height="14" viewBox="0 0 17 14"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.4181 3.74107C14.4281 3.88319 14.4281 4.02535 14.4281 4.16747C14.4281 8.50247 11.1509 13.4974 5.16096 13.4974C3.31558 13.4974 1.60132 12.9593 0.159302 12.0253C0.421495 12.0558 0.673569 12.0659 0.94585 12.0659C2.46851 12.0659 3.8702 11.5482 4.98953 10.6649C3.5576 10.6345 2.3576 9.69031 1.94415 8.39081C2.14585 8.42125 2.34751 8.44156 2.5593 8.44156C2.85172 8.44156 3.14418 8.40094 3.41643 8.32991C1.92401 8.02531 0.80465 6.70553 0.80465 5.11163V5.07103C1.23824 5.31469 1.74249 5.46697 2.2769 5.48725C1.39959 4.89841 0.824826 3.89335 0.824826 2.75628C0.824826 2.14716 0.98614 1.58878 1.26851 1.10147C2.87187 3.09131 5.28195 4.39078 7.98443 4.53294C7.93403 4.28928 7.90376 4.0355 7.90376 3.78169C7.90376 1.97457 9.35586 0.502502 11.1609 0.502502C12.0987 0.502502 12.9457 0.89844 13.5407 1.53803C14.2768 1.39591 14.9827 1.12178 15.6079 0.746159C15.3659 1.5076 14.8516 2.14719 14.176 2.55325C14.8315 2.48222 15.4668 2.29944 16.0516 2.04566C15.608 2.69538 15.0533 3.27403 14.4181 3.74107V3.74107Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

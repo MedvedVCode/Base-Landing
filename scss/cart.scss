@@ -1,0 +1,270 @@
+@import "vars-mixins";
+
+@import 'common';
+@import 'header';
+@import 'breadcrumb';
+@import 'subscribe';
+@import 'footer';
+
+.breadcrumb-text__link {
+  display: none;
+}
+
+// -----Cart-----
+.cart {
+  @include padding10px;
+  padding-top: 96px;
+  padding-bottom: 128px;
+
+  &-wrp {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+}
+
+// -----Card-----
+.card {
+  grid-column: 1/span 7;
+  display: flex;
+  max-width: 652px;
+  height: 306px;
+  width: 100%;
+  position: relative;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+  &-text {
+    padding-top: 22px;
+    padding-left: 32px;
+    box-sizing: border-box;
+    font-weight: 400;
+  }
+
+  & .card-text p {
+    margin-bottom: 6px;
+  }
+
+  &-title {
+    max-width: 200px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    margin-bottom: 42px;
+    text-transform: uppercase;
+  }
+
+  &-price {
+    &-value {
+      color: #EF5B70;
+    }
+  }
+
+  &-color {
+    &-value {
+      text-transform: capitalize;
+      color: $breadBaseColor;
+    }
+  }
+
+  &-size {
+    &-value {
+      color: $breadBaseColor;
+      text-transform: uppercase;
+    }
+  }
+
+  &-quantity {
+    &-value {
+      margin-left: 24px;
+      max-width: 44px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid #EAEAEA;
+      font-size: 18px;
+      line-height: 22px;
+      color: #656565;
+    }
+  }
+
+  &-cross {
+    &-img {
+      position: absolute;
+      right: 22px;
+      top: 28px;
+      transition: transform 0.3s ease-in;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease-in;
+      }
+    }
+  }
+}
+
+// -----End of Card-----
+
+//-----Address-----
+.address {
+  height: 272px;
+  grid-column: span 4/-1;
+  grid-row: 1;
+  margin-top: 17px;
+
+  &-title {
+    @include textSize(16px, 19px);
+    color: #222;
+    text-transform: uppercase;
+  }
+
+  & input {
+    border: 1px solid #A4A4A4;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 17px;
+    padding-right: 17px;
+    box-sizing: border-box;
+    @include textSize(13px, 43px);
+  }
+
+  &-city {
+    &::placeholder {
+      color: #B1B1B1;
+    }
+  }
+
+  &-state,
+  &-zip {
+    &::placeholder {
+      color: #222222;
+    }
+  }
+
+  &-quote {
+    border: 1px solid #A4A4A4;
+    margin-top: 23px;
+    box-sizing: border-box;
+    color: #4A4A4A;
+    text-transform: uppercase;
+    @include textSize(11px, 33px);
+    width: 100px;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+      color: $breadSelectedColor;
+      border-color: $breadSelectedColor;
+    }
+
+    &:active {
+      color: white;
+      border-color: white;
+      background-color: $breadSelectedColor;
+    }
+  }
+}
+
+//-----End of Address-----
+//-----Checkout-----
+.checkout {
+  height: 214px;
+  background-color: #F5F3F3;
+  grid-column: span 4/-1;
+  grid-row: 2;
+  box-sizing: border-box;
+  padding-left: 34px;
+  padding-right: 34px;
+
+  &-subtotal {
+    text-align: end;
+    text-transform: uppercase;
+    @include textSize(11px, 13px);
+    margin-top: 39px;
+    font-weight: 400;
+
+    & span {
+      margin-left: 25px;
+    }
+  }
+
+  &-grandtotal {
+    @include textSize(16px, 19px);
+    text-align: end;
+    text-transform: uppercase;
+    margin-right: 3px;
+    margin-top: 12px;
+
+    & span {
+      margin-left: 25px;
+      color: #F16D7F;
+      font-weight: 700;
+    }
+  }
+
+  &-btn {
+    width: 100%;
+    text-transform: uppercase;
+    @include textSize(16px, 50px);
+    background-color: $breadSelectedColor;
+    color: white;
+    display: block;
+    transition: all .5s;
+    cursor: pointer;
+
+    &-wrp {
+      max-width: 273px;
+      width: 100%;
+      padding-top: 17px;
+      border-top: 1px solid #E2E2E2;
+      margin-top: 21px;
+      margin: 21px auto 0;
+    }
+
+    &:hover {
+      color: $breadSelectedColor;
+      background-color: white;
+    }
+
+    &:active {
+      color: black;
+      background-color: $breadSelectedColor;
+    }
+  }
+}
+
+//-----End of Checkout-----
+//-----Card-Manage-----
+.card-manage {
+  grid-column: 1/span 7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+
+  &__clear,
+  &__continue {
+    color: black;
+    width: 225px;
+    line-height: 50px;
+    border: 1px solid #A4A4A4;
+    text-transform: uppercase;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+      color: $breadSelectedColor;
+      border-color: $breadSelectedColor;
+    }
+
+    &:active {
+      color: white;
+      border-color: white;
+      background-color: $breadSelectedColor;
+    }
+  }
+}
+
+//-----End of Card-Manage-----
+
+// -----End of Cart-----
