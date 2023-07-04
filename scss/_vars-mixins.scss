@@ -1,10 +1,14 @@
 $breadSelectedColor: #f16d7f;
 $breadBaseColor: #636363;
 $bottomLineColor: #EBEBEB;
+$extraSelectedColor: #EF5B70;
 
 @mixin textSize($size: 24px, $height: 29px) {
   font-size: $size;
   line-height: $height;
 }
 
-
+@mixin padding10px {
+  padding-left: 10px;
+  padding-right: 10px;
+}
