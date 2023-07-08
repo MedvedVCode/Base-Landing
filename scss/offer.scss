@@ -1,0 +1,62 @@
+.offer_wrp {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.offer {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(100px, 360px));
+  grid-template-rows: minmax(100px, 260px) minmax(100px, 180px);
+  gap: 30px;
+}
+
+.offer__item {
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-blend-mode: darken;
+  background-color: rgba(33, 22, 22, 0.7);
+}
+
+.offer__item:hover {
+  background-blend-mode: normal;
+  background-color: #000;
+}
+
+.offer__item:first-child {
+  background-image: url('../img/offer/woman_no_filter.png');
+}
+
+.offer__item:nth-child(2) {
+  background-image: url('../img/offer/men_no_filter.png');
+}
+
+.offer__item:nth-child(3) {
+  background-image: url('../img/offer/kid_no_filter.png');
+}
+
+.offer__item:last-child {
+  grid-column: span 3;
+  background-image: url('../img/offer/clothes_no_filter.png');
+}
+
+.offer__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.offer__desc-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #F16D7F;
+}

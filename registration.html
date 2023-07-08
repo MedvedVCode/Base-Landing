@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart Landing & Seo</title>
+  <title>Registration Landing & Seo</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -120,82 +120,49 @@
     <div class="breadcrumb-wrp">
       <div class="container">
         <div class="breadcrumb-text">
-          <h2 class="breadcrumb-text__title">shopping cart</h2>
+          <h2 class="breadcrumb-text__title">registration</h2>
         </div>
       </div>
     </div>
   </section>
-  <!-- Cart -->
-  <section class="cart">
-    <div class="cart-wrp container">
-      <article class="card">
-        <a href="#" class="card-link">
-          <img src="img/hat_boy.png" alt="Boy in hat photo" class="card-img" height="306" />
-        </a>
-        <div class="card-text">
-          <h2 class="card-title">MANGO PEOPLE T-SHIRT</h2>
-          <p class="card-price">
-            Price:
-            <span class="card-price-value">$300</span>
-          </p>
-          <p class="card-color">Color:
-            <span class="card-color-value">red</span>
-          </p>
-          <p class="card-size">Size:
-            <span class="card-size-value">xl</span>
-          </p>
-          <label class="card-quantity">
-            Quantity:
-            <input type="number" class="card-quantity-value" value="2" />
-          </label>
-          <img class="card-cross-img" src="img/cross.svg" alt="Cross on close photo" height="18" />
-        </div>
-      </article>
-      <article class="card">
-        <a href="#" class="card-link">
-          <img src="img/black_boy.png" alt="Boy in hat photo" class="card-img" height="306" />
-        </a>
-        <div class="card-text">
-          <h2 class="card-title">MANGO PEOPLE T-SHIRT</h2>
-          <p class="card-price">
-            Price:
-            <span class="card-price-value">$300</span>
-          </p>
-          <p class="card-color">Color:
-            <span class="card-color-value">red</span>
-          </p>
-          <p class="card-size">Size:
-            <span class="card-size-value">xl</span>
-          </p>
-          <label class="card-quantity">
-            Quantity:
-            <input type="number" class="card-quantity-value" value="2" />
-          </label>
-          <img class="card-cross-img" src="img/cross.svg" alt="Cross on close photo" height="18" />
-        </div>
-      </article>
-      <form action="#" class="address">
-        <h3 class="address-title">
-          shipping address
-        </h3>
-        <input type="text" class="address-city" placeholder="Bangladesh">
-        <input type="text" class="address-state" placeholder="State">
-        <input type="text" class="address-zip" placeholder="Postcode / Zip">
-        <button class="address-quote">get a quote</button>
+  <!-- Registration -->
+  <section class="registration">
+    <div class="container registration-wrp">
+      <form action="#" class="registration__form">
+        <fieldset class="registration__form-person">
+          <legend> Your Name </legend>
+          <input type="text" class="registration__form-name" placeholder="First Name">
+          <input type="text" class="registration__form-family" placeholder="Last Name">
+        </fieldset>
+        <fieldset class="registration__form-sex">
+          <input type="radio" id="radio-male" class="registration__form-male">
+          <label for="radio-male">Male</label>
+          <input type="radio" id="radio-female" class="registration__form-female">
+          <label for="radio-female">Female</label>
+        </fieldset>
+        <fieldset class="registration__form-user">
+          <legend>Login details</legend>
+          <input type="text" class="registration__form-email" placeholder="Email">
+          <input type="text" class="registration__form-password" placeholder="Password">
+        </fieldset>
+        <p class="registration__form-notice">Please use 8 or more characters, with at least 1 number and a mixture of
+          uppercase and lowercase letters</p>
+        <button class="registration__form-btn">
+          join now<span>&#8594;</span>
+        </button>
       </form>
-      <div class="checkout">
-        <p class="checkout-subtotal">sub total <span>$900</span>
-        </p>
-        <p class="checkout-grandtotal">grand total <span>$900</span>
-        </p>
-        <div class="checkout-btn-wrp">
-          <button class="checkout-btn">proceed to checkout</button>
-        </div>
+      <div class="registration__loyalty">
+        <h2 class="registration__loyalty-title">loyalty has its perks</h2>
+        <p class="registration__loyalty-text">Get in on the loyalty program where you can earn points and unlock serious
+          perks. Starting with these as soon as you join:</p>
+        <ul class="registration__loyalty-perks">
+          <li>15% off welcome offer</li>
+          <li>Free shipping, returns and exchanges on all orders</li>
+          <li>$10 off a purchase on your birthday</li>
+          <li>Early access to products</li>
+          <li>Exclusive offers & rewards</li>
+        </ul>
       </div>
-      <form action="#" class="card-manage">
-        <button class="card-manage__clear">clear shopping cart</button>
-        <button class="card-manage__continue">continue shopping</button>
-      </form>
     </div>
   </section>
   <!-- Subscribe -->

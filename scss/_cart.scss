@@ -1,15 +1,3 @@
-@import "vars-mixins";
-
-@import 'common';
-@import 'header';
-@import 'breadcrumb';
-@import 'subscribe';
-@import 'footer';
-
-.breadcrumb-text__link {
-  display: none;
-}
-
 // -----Cart-----
 .cart {
   @include padding10px;
@@ -84,6 +72,11 @@
       font-size: 18px;
       line-height: 22px;
       color: #656565;
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
     }
   }
 

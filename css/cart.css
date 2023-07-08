@@ -550,6 +550,10 @@ input:focus {
   line-height: 22px;
   color: #656565;
 }
+.card-quantity-value::-webkit-inner-spin-button, .card-quantity-value::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .card-cross-img {
   position: absolute;
   right: 22px;

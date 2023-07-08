@@ -42,3 +42,10 @@ input {
 input:focus {
   outline: none;
 }
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}

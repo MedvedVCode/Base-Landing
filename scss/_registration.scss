@@ -1,0 +1,125 @@
+.registration {
+  @include padding10px;
+
+  &-wrp {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    @extend .cart-wrp;
+  }
+
+  &__form {
+    grid-column: 1/span 4;
+
+    &-person,
+    &-user {
+      display: flex;
+      flex-direction: column;
+
+      & legend {
+        @include textSize(16px, 19px);
+        color: #222;
+      }
+
+      & input {
+        border: 1px solid #A4A4A4;
+        @include textSize(13px, 43px);
+        margin-top: 21px;
+        padding-left: 17px;
+        padding-right: 17px;
+
+        &::placeholder {
+          color: #B1B1B1;
+        }
+      }
+    }
+
+    &-sex {
+      display: flex;
+      align-items: center;
+      margin-top: 31px;
+      gap: 10px;
+
+      & label {
+        @include textSize(11px, 13px);
+        color: black;
+        margin-top: 3px;
+      }
+
+      & input {
+        // border: 0;
+        height: 17px;
+        width: 17px;
+      }
+    }
+
+    &-male,
+    &-female {
+      margin: 0;
+    }
+
+    &-female {
+      margin-left: 10px;
+    }
+
+    &-user {
+      margin-top: 33px;
+    }
+
+    &-notice {
+      margin-top: 15px;
+      @include textSize(13px, 16px);
+      color: #B1B1B1;
+    }
+
+    &-btn {
+      margin-top: 39px;
+      @include textSize(14px, 50px);
+      text-transform: uppercase;
+      width: 167px;
+      color: white;
+      background-color: $breadSelectedColor;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      transition: all .5s;
+
+      &:hover {
+        outline: 1px solid $breadSelectedColor;
+        background-color: transparent;
+        color: $breadSelectedColor;
+        transition: all .5s;
+      }
+
+      &:active {
+        outline: 1px solid $breadBaseColor;
+        background-color: transparent;
+        color: $breadBaseColor;
+      }
+    }
+  }
+
+  &__loyalty {
+    grid-column: 6/span 7;
+    @include textSize;
+    color: black;
+
+    &-title {
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    &-text {
+      margin-bottom: 21px;
+    }
+
+    &-perks {
+      list-style: none url('../img/checked.svg');
+      margin-left: 32px;
+
+      & li {
+        padding-left: 14px;
+      }
+    }
+  }
+}
