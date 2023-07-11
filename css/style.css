@@ -1433,7 +1433,6 @@ fieldset {
 @media (max-width: 1024px) {
   .container {
     max-width: 768px;
-    outline: 1px solid forestgreen;
   }
   .header {
     padding-left: 0px;
