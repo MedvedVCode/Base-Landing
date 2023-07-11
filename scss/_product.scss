@@ -162,7 +162,7 @@
 
 .products {
   @include padding10px;
-  margin-bottom: 128px;
+  margin-bottom: 96px;
 }
 
 .products__menu {
@@ -446,7 +446,6 @@
 
 .products__scroll {
   margin-top: 48px;
-  margin-bottom: 96px;
   height: 43px;
   width: 284px;
   margin-left: auto;

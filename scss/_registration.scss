@@ -46,19 +46,26 @@
       }
 
       & input {
-        // border: 0;
         height: 17px;
         width: 17px;
       }
     }
 
     &-male,
-    &-female {
+    &-female, 
+    &-other {
       margin: 0;
     }
 
-    &-female {
+    &-female, &-other {
       margin-left: 10px;
+    }
+
+    &-other{
+      display: none;
+      &-txt{
+        display: none;
+      }
     }
 
     &-user {

@@ -787,7 +787,7 @@ fieldset {
 .products {
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 128px;
+  margin-bottom: 96px;
 }
 
 .products__menu {
@@ -1051,7 +1051,6 @@ fieldset {
 
 .products__scroll {
   margin-top: 48px;
-  margin-bottom: 96px;
   height: 43px;
   width: 284px;
   margin-left: auto;
@@ -1186,11 +1185,17 @@ fieldset {
   height: 17px;
   width: 17px;
 }
-.registration__form-male, .registration__form-female {
+.registration__form-male, .registration__form-female, .registration__form-other {
   margin: 0;
 }
-.registration__form-female {
+.registration__form-female, .registration__form-other {
   margin-left: 10px;
+}
+.registration__form-other {
+  display: none;
+}
+.registration__form-other-txt {
+  display: none;
 }
 .registration__form-user {
   margin-top: 33px;
@@ -1428,10 +1433,11 @@ fieldset {
 @media (max-width: 1024px) {
   .container {
     max-width: 768px;
+    outline: 1px solid forestgreen;
   }
   .header {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .header-left {
     margin-left: 32px;
@@ -1443,15 +1449,23 @@ fieldset {
     gap: 25px;
     margin-right: 42px;
   }
-  .menu-list {
-    left: 20px;
-  }
   .header__link--product-count {
     margin-left: 17px;
   }
-  .poster {
-    padding-right: 0;
+  .menu-list {
+    left: 20px;
+  }
+  .breadcrumb-wrp {
     padding-left: 0;
+    padding-right: 0;
+  }
+  .breadcrumb-text {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .poster {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .poster__wrapper {
     height: 368px;
@@ -1482,18 +1496,87 @@ fieldset {
     justify-content: center;
   }
   .offer_wrp {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .slider {
+    height: 624px;
     padding-left: 0;
     padding-right: 0;
+    background-size: 525px;
+    background-position-y: center;
+  }
+  .info {
+    height: auto;
+    margin-bottom: 128px;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+  }
+  .info-content {
+    position: relative;
+    top: 0;
+    border: none;
+  }
+  .cart {
+    padding-top: 59px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .cart-wrp, .registration-wrp {
+    grid-template-columns: repeat(8, 1fr);
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .card {
+    grid-column: 1/span 8;
+    max-width: 735px;
+    margin-left: 16px;
+  }
+  .card-manage {
+    grid-column: 1/span 8;
+    grid-row: 3;
+    justify-content: center;
+    margin-top: 22px;
+    gap: 48px;
+    margin-bottom: 22px;
+  }
+  .address {
+    grid-column: 1/span 4;
+    grid-row: 4;
+    margin-top: 0;
+    margin-left: 16px;
+  }
+  .checkout {
+    grid-row: 4;
+    margin-top: 39px;
+    margin-right: 16px;
   }
   .products {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 63px;
+  }
+  .products__menu {
+    height: 81px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .products__menu-filter {
+    top: 24px;
+  }
+  .products__menu-filter[open] {
+    top: 8px;
+  }
+  .products__menu-item-wrp {
+    margin-left: auto;
+    margin-top: 24px;
+    margin-right: 0;
   }
   .products__title {
     margin-top: 109px;
   }
   .products__cards {
-    margin-top: 72px;
     gap: 16px;
     grid-template-columns: repeat(2, minmax(100px, 360px));
     justify-content: center;
@@ -1501,6 +1584,42 @@ fieldset {
   .products__browse {
     margin-top: 32px;
     margin-bottom: 64px;
+  }
+  .products__scroll {
+    margin-top: 40px;
+  }
+  .products__hide_tablet {
+    display: none;
+  }
+  .registration {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .registration-wrp {
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .registration__form-other {
+    display: block;
+  }
+  .registration__form-other-txt {
+    display: inline;
+  }
+  .registration__loyalty {
+    grid-column: 5/span 4;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration__loyalty-title {
+    margin-bottom: 32px;
+  }
+  .registration__loyalty-text {
+    margin-bottom: 22px;
+  }
+  .registration__loyalty-perks li:not(:last-child) {
+    margin-bottom: 16px;
   }
   .feature {
     padding-left: 0;
@@ -1525,12 +1644,15 @@ fieldset {
   }
   .subscribe-wrp {
     flex-direction: column;
+    min-height: 614px;
   }
   .subscribe-info {
     margin-top: 64px;
   }
-  .subcsribe-form {
+  .subscribe-form {
     margin-top: 77px;
+  }
+  .subscribe-form__area {
     margin-bottom: 140px;
   }
   .copyright-txt {
@@ -1552,16 +1674,28 @@ fieldset {
   .header-right {
     margin-right: 16px;
   }
-  .menu-list {
-    left: -184px;
-  }
-  .poster__wrapper {
-    background: none;
-  }
   .header__account, .header__basket {
     display: none;
   }
+  .menu-list {
+    left: -184px;
+  }
+  .breadcrumb-text {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .breadcrumb-text__title {
+    width: 100%;
+    text-align: center;
+  }
+  .breadcrumb-text__link {
+    margin-top: 32px;
+    margin-bottom: 22px;
+  }
   .poster__wrapper {
+    background: none;
     padding-left: 27px;
     padding-top: 148px;
   }
@@ -1594,6 +1728,124 @@ fieldset {
     height: 111px;
     grid-column: span 1;
   }
+  .slider {
+    background-size: 454px;
+  }
+  .info {
+    height: auto;
+    margin-bottom: 128px;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+  }
+  .info-content {
+    position: relative;
+    top: 0;
+    border: none;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .info-content-title {
+    margin-bottom: 32px;
+  }
+  .info-content__price::after {
+    width: 175px;
+    margin-top: 32px;
+    margin-bottom: 51px;
+  }
+  .info-content__filter {
+    margin-bottom: 65px;
+  }
+  .info-content__filter-summary {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .cart {
+    padding-top: 39px;
+    padding-bottom: 96px;
+  }
+  .cart-wrp, .registration-wrp {
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+  .card {
+    grid-column: 1/span 4;
+    height: 188px;
+    margin-left: 0;
+  }
+  .card:first-child {
+    margin-bottom: 32px;
+  }
+  .card-img {
+    height: 188px;
+  }
+  .card-text {
+    padding-left: 17px;
+    padding-top: 13px;
+  }
+  .card .card-text p {
+    margin-bottom: 4px;
+  }
+  .card-title {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 135px;
+    margin-bottom: 25px;
+  }
+  .card-quantity-value {
+    font-size: 10px;
+    line-height: 15px;
+    max-width: 24px;
+    margin-left: 15px;
+  }
+  .card-cross-img {
+    right: 12px;
+    top: 17px;
+    height: 11px;
+    width: 10px;
+  }
+  .card-manage {
+    grid-column: 1/span 4;
+    margin-top: 30px;
+    gap: 8px;
+    margin-bottom: 48px;
+  }
+  .card-manage__clear, .card-manage__continue {
+    font-size: 12px;
+    line-height: 33px;
+    text-transform: capitalize;
+  }
+  .address {
+    margin-left: 0;
+  }
+  .checkout {
+    grid-column: 1/span 4;
+    grid-row: 5;
+    margin-right: 0;
+    margin-top: 48px;
+  }
+  .products__menu {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .products__menu-filter-summary span {
+    display: none;
+  }
+  .products__menu-filter-summary svg {
+    width: 37px;
+    height: 25px;
+  }
+  .products__menu-item {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .products__menu-item-wrp {
+    gap: 24px;
+  }
   .products__title {
     margin-top: 64px;
   }
@@ -1605,12 +1857,33 @@ fieldset {
     margin-top: 40px;
     margin-bottom: 96px;
   }
+  .registration-wrp {
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .registration__form {
+    grid-row: 1;
+  }
+  .registration__loyalty {
+    grid-column: 1/span 4;
+    grid-row: 2;
+  }
+  .subcsribe {
+    min-height: 550px;
+  }
   .subcsribe-form {
     max-width: 341px;
   }
-  .subscribe-form__desc {
+  .subcsribe-form__desc {
     font-size: 14px;
     line-height: 153.2%;
+  }
+  .subcsribe-form__area {
+    margin-bottom: 110px;
   }
   .footer-wrp {
     height: 143px;
