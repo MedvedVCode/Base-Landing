@@ -13,7 +13,6 @@ const headerSearchInputEl = document.querySelector('.header__search-input');
 
 headerSearchInputEl.addEventListener('change', () => {
   const searchQuery = headerSearchInputEl.value;
-  console.log(searchQuery);
   if (fileName.includes(searchQuery)) {
     const url = `${newPath}/${searchQuery}.html`;
     window.location.href = url;
