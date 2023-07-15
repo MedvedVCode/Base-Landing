@@ -466,9 +466,18 @@ fieldset {
   max-width: 200px;
   font-size: 24px;
   line-height: 29px;
-  color: #222222;
   margin-bottom: 42px;
   text-transform: uppercase;
+}
+.card-title-link, .product__card-title-link {
+  color: #222222;
+  transition: all 0.3s ease-in;
+}
+.card-title-link:hover, .product__card-title-link:hover {
+  color: #f16d7f;
+}
+.card-title-link:active, .product__card-title-link:active {
+  font-weight: 600;
 }
 .card-price-value {
   color: #EF5B70;
@@ -972,7 +981,6 @@ fieldset {
   color: #000000;
   margin-bottom: 16px;
 }
-
 .product__card-desc {
   font-weight: 300;
   font-size: 14px;

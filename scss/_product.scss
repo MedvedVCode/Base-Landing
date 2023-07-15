@@ -308,14 +308,14 @@
   line-height: 36px;
   color: #222222;
   text-align: center;
-  
+
   &-desc {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
     text-align: center;
-  margin-bottom: 64px;
+    margin-bottom: 64px;
   }
 }
 
@@ -366,6 +366,10 @@
   line-height: 16px;
   color: #000000;
   margin-bottom: 16px;
+
+  &-link {
+    @extend .card-title-link
+  }
 }
 
 .product__card-desc {
@@ -434,11 +438,13 @@
   color: #F26376;
   display: block;
   cursor: pointer;
+
   &:hover {
     background-color: #F26376;
     color: white;
     transition: all .5s ease;
   }
+
   &:active {
     transform: scaleX(1.05);
   }
@@ -459,28 +465,32 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  &-back:hover svg, &-forward:hover svg{
+  &-back:hover svg,
+  &-forward:hover svg {
     fill: $breadSelectedColor;
     transform: scale(1.2);
     transition: all 0.3s;
   }
 
-  &-content{
+  &-content {
     width: 100%;
     display: flex;
-    @include textSize(16px,19px);
-    & :first-child{
+    @include textSize(16px, 19px);
+
+    & :first-child {
       color: $breadSelectedColor;
     }
   }
 
-  &-page{
+  &-page {
     margin-left: 20px;
     color: #C4C4C4;
-    &--no-magin{
+
+    &--no-magin {
       margin-left: 0;
     }
-    &:hover{
+
+    &:hover {
       transform: scale(1.2);
       transition: all 0.3s;
     }
